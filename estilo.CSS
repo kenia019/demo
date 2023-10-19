@@ -22,20 +22,46 @@ header{
     
 }
 
-nav a{
-    font-weight: 600;
-    padding-right: 20px;
-}
-nav a:hover{
-    color: white;
-    
+nav{
+    max-width: 90px;
+    margin: auto;
+    font-size: 13px;
+    margin-top: 20px;
 }
 
-@media (max-widt:100px) {
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 10px 0px;
-    }
+li a:horver{
+    color: white;
+}
+
+.menu-horizontal{
+    list-style: none;
+    display:flex;
+    justify-content: space-around;
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 9px 10px;
+    color: rgb(9, 8, 8); 
+    text-decoration: none;  
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgb(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+     background-color: black;
+
+}
+
+.menu-vertical li:a {
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px    
+
 }
